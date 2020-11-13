@@ -17,13 +17,13 @@ namespace Misaka
     private:
         std::vector<std::vector<double>> mData;
 
-    public:   
+    public:
         /**
          * @brief       Construct a new Matrix object.
         */
         Matrix() : mRows(0), mCols(0) { /* Empty */ }
 
-        /**                
+        /**
          * @brief           Construct a new Matrix object
          * @param pRows     Number of mRows in matrix.
          * @param pCols     Number of columns in matrix.
@@ -130,7 +130,7 @@ namespace Misaka
         /**
          * @brief           Multiplies this matrix with other matrix.
          * @param pMatrix   Other matrix object.
-         * @return          Matrix 
+         * @return          Matrix
         */
         Matrix operator *(Matrix& pMatrix)
         {
@@ -156,7 +156,7 @@ namespace Misaka
         }
 
         /**
-         * @brief           Element wise matrix addition. 
+         * @brief           Element wise matrix addition.
          * @param pMatrix   Other matrix object.
          * @return          void
         */
@@ -170,7 +170,7 @@ namespace Misaka
                 }
             }
         }
-        
+
         /**
          * @brief           Add value to every element in matrix.
          * @param pValue    Value to add.
@@ -184,7 +184,7 @@ namespace Misaka
         }
 
         /**
-         * @brief           Element wise matrix addition. 
+         * @brief           Element wise matrix addition.
          * @param pMatrix   Other matrix object.
          * @return          Matrix
         */
@@ -237,12 +237,12 @@ namespace Misaka
             Matrix matrix = *this;
             matrix.Sub(pValue);
             return matrix;
-        }  
-        
+        }
+
         /**
          * @brief           Element wise matrix subtraction.
          * @param pMatrix   Other matrix object.
-         * @return          Matrix 
+         * @return          Matrix
         */
         Matrix operator -(Matrix& pMatrix)
         {
@@ -266,7 +266,7 @@ namespace Misaka
                 }
             }
         }
-     
+
         /**
          * @brief           Transpose this matrix object.
          * @return          void
@@ -314,7 +314,7 @@ namespace Misaka
         {
             return mData[i];
         }
-        
+
         /**
          * @brief           Print matrix values to standard output.
          * @return          void
